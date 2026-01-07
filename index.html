@@ -22,39 +22,60 @@
       </table>
     </div>
 
+    <div id="sbd-pr">
+      <h1>Personal Record</h1>
+
+      <form onsubmit="calculateDots(event)" id="sbd-pr-form" >
+        <div class="kg">
+          <label>Bench</label>
+          <input type="number" id="bench" name="bench" min="0" value="100" required>
+        </div>
+        <div class="kg">
+          <label>Deadlift</label>
+          <input type="number" id="deadlift" name="deadlift" min="0" value="200" required>
+        </div>
+        <div class="kg">
+          <label>Squat</label>
+          <input type="number" id="squat" name="squat" min="0" value="180" required>
+        </div>
+        <div class="kg">
+            <label>Body Weight</label>
+            <input type="number" id="bw" name="bw" min="0" value="65" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="hasil-dots"></p>
+    </div>
+
     <div id="sbd">
       <section id="bench">
         <h1>Bench</h1>
 
         <div id="primary-bench">
           <h2>Primary bench</h1> 
-          
-            <table>
-              <thead>
-                  <th>Week 1</th>
-                  <th>Week 2</th>
-                  <th>Week 3</th>
-                  <th>Week 4</th>
-                  <th>Week 5</th>
-              </thead>
+          <table>
+            <thead>
+              <th>Week 1</th>
+              <th>Week 2</th>
+              <th>Week 3</th>
+              <th>Week 4</th>
+              <th>Week 5</th>
+            </thead>
+            
+            <tr>
+              <th colspan="5">Top set</th>
+            </tr>
+
+            <tbody id="body-primary-bench">
+              
+            </tbody>
                  
             </table>
         </div>
         
         <h2>Secondary bench</h1>
         <h2>Tertiary bench</h1>
-      </section>
-  
-      <section id="squat">
-        <h1>Squat</h1>
-        <h2>Primary squat</h1>
-        <h2>Secondary squat</h2>
-      </section>
-
-      <section id="squat">
-        <h1>Squat</h1>
-        <h2>Primary squat</h1>
-        <h2>Secondary squat</h2>
       </section>
     </div>
   </body>

@@ -1,5 +1,6 @@
-import { schedule } from "./dataSchedule.js";
+import { schedule } from "./data.js";
 
+// Schedule
 const days = Object.keys(schedule);
 const maxRows = Math.max(...days.map((day) => schedule[day].length));
 
@@ -15,3 +16,5 @@ for (let row = 0; row < maxRows; row++) {
 }
 
 tableBody.innerHTML = tableData;
+
+// Primary Bench
