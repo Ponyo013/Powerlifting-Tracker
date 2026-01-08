@@ -16,5 +16,3 @@ for (let row = 0; row < maxRows; row++) {
 }
 
 tableBody.innerHTML = tableData;
-
-// Primary Bench

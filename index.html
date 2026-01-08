@@ -5,7 +5,7 @@
 
     <title>Powerlifting Tracker</title>
   </head>
-  <body>
+  <body >
     <div id="schedule">
       <h1>Schedule</h1>
       <table>
@@ -54,7 +54,7 @@
 
         <div id="primary-bench">
           <h2>Primary bench</h1> 
-          <table>
+          <table id="table-primary-bench">
             <thead>
               <th>Week 1</th>
               <th>Week 2</th>
@@ -62,13 +62,21 @@
               <th>Week 4</th>
               <th>Week 5</th>
             </thead>
-            
+
             <tr>
               <th colspan="5">Top set</th>
             </tr>
-
-            <tbody id="body-primary-bench">
+        
+            <tbody id="top-primary-bench">
               
+            </tbody>
+
+            <tr>
+              <th colspan="5">Backoff set</th>
+            </tr>
+        
+            <tbody id="backoff-primary-bench">
+
             </tbody>
                  
             </table>
@@ -81,6 +89,7 @@
   </body>
 
   <script src="js/calculator.js" defer></script>
+  <script src="js/primaryLift.js" onload="primaryBenchHandler()" defer></script>
   <script type="module" src="js/cellInput.js" defer></script>
   <link rel="stylesheet" href="/css/style.css" />
 </html>
